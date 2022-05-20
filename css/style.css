@@ -1,0 +1,82 @@
+/*
+#303d3f - фон
+#6cd1e5 - голубой
+#39484a - серые клавиши
+#479bac - на голубом фоне колор
+#708689 - на сером фоне колор
+#64787b - колор на основном цвете
+#3d4c4e - полоски между серыми клавишами
+#69cde1 - полоски между голубыми клавишами
+
+*/
+
+
+body {
+    background-color: rgb(146, 55, 55);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+    margin: 100px auto;
+    width: 400px;
+    height: 650px;
+    background-color: #303d3f;
+    color: #64787b;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.scrin {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    width: 100%;
+    height: 150px;
+
+    color: #fff;
+    font-size: 58px;
+    font-weight: 500;
+
+    overflow: hidden;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn {
+    width: 98px;
+    height: 100px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 100px;
+    border: 1px solid #5c7479;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(80%);
+}
+
+.null {
+    width: 198px;
+}
+
+.bg_blue {
+    background-color: #6cd1e5;
+    color: #479bac;
+}
+
+.bg_light_gray {
+    background-color: #39484a;
+    color: #708689;
+}
